@@ -28,21 +28,27 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/c" />
+            android:text="@string/c"
+            android:background="@color/cd"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/del"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/del" />
+            android:text="@string/del"
+            android:background="@color/cd"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/plusMinus"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/plusMinus" />
+            android:text="@string/plusMinus"
+            android:background="@color/fn_color"
+            android:textColor="@color/white"/>
 
 
         <Button
@@ -50,7 +56,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/modulas" />
+            android:text="@string/modulas"
+            android:background="@color/fn_color"
+            android:textColor="@color/white"/>
 
 
     </LinearLayout>
@@ -66,28 +74,36 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/m" />
+            android:text="@string/m"
+            android:background="@color/fn_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/memRec"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/mr" />
+            android:text="@string/mr"
+            android:background="@color/fn_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/memC"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/mc" />
+            android:text="@string/mc"
+            android:background="@color/fn_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/multiplication"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/x" />
+            android:text="@string/x"
+            android:background="@color/fn_color"
+            android:textColor="@color/white"/>
 
 
 
@@ -105,28 +121,36 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/_7" />
+            android:text="@string/_7"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/num8"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="8" />
+            android:text="8"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/num9"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="9" />
+            android:text="9"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/division"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="/" />
+            android:text="/"
+            android:background="@color/fn_color"
+            android:textColor="@color/white"/>
 
 
     </LinearLayout>
@@ -141,28 +165,36 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/_4" />
+            android:text="@string/_4"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/num5"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/_5" />
+            android:text="@string/_5"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/num6"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/_6" />
+            android:text="@string/_6"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/subtraction"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/minus" />
+            android:text="@string/minus"
+            android:background="@color/fn_color"
+            android:textColor="@color/white"/>
 
 
     </LinearLayout>
@@ -177,28 +209,36 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/_1" />
+            android:text="@string/_1"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/num2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/_2" />
+            android:text="@string/_2"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/num3"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/_3" />
+            android:text="@string/_3"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/addition"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/add" />
+            android:text="@string/add"
+            android:background="@color/fn_color"
+            android:textColor="@color/white"/>
 
 
     </LinearLayout>
@@ -213,14 +253,18 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/decimal" />
+            android:text="@string/decimal"
+            android:background="@color/equal_color"
+            android:textColor="@color/white"/>
 
         <Button
             android:id="@+id/num0"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/_0" />
+            android:text="@string/_0"
+            android:background="@color/num_color"
+            android:textColor="@color/white"/>
 
 
         <Button
@@ -228,7 +272,9 @@
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="@string/equals" />
+            android:text="@string/equals"
+            android:background="@color/equal_color"
+            android:textColor="@color/white"/>
 
 
 

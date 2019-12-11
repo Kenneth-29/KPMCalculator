@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-/**********************************************************************/
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater mF = getMenuInflater();
@@ -50,15 +50,21 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.item1:
                 Toast.makeText(this, "Settings Selected", Toast.LENGTH_SHORT).show();
+                openSet();
                 return true;
 
             case R.id.item2:
-                Toast.makeText(this, "Preference Selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Preference Selected: Currently not available!!", Toast.LENGTH_SHORT).show();
                 return true;
 
             case R.id.item3:
                 Toast.makeText(this, "Help Selected", Toast.LENGTH_SHORT).show();
+                openHelp();
                 return true;
+
+            case R.id.item4:
+                Toast.makeText(this, "App closed, Goodbye!!", Toast.LENGTH_LONG).show();
+                finish();
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -72,6 +78,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void openSimpleCal() {
         Intent intent = new Intent(this, SimpleCalculator.class);
+        startActivity(intent);
+    }
+    public void openSet(){
+        Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
+    public void openHelp(){
+        Intent intent = new Intent(this, Help.class);
         startActivity(intent);
     }
 }

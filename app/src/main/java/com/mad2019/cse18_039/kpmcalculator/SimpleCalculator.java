@@ -1,11 +1,17 @@
 package com.mad2019.cse18_039.kpmcalculator;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class SimpleCalculator extends AppCompatActivity {
 
@@ -22,7 +28,7 @@ public class SimpleCalculator extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_calculator);
         getSupportActionBar().setTitle("Basic Calculator");
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         final TextView screen = findViewById(R.id.screen);
         final TextView fnWin = findViewById(R.id.fnWin);
@@ -222,7 +228,7 @@ public class SimpleCalculator extends AppCompatActivity {
                                     screenContent = screen.getText().toString();
                                     String secondNumSt = screenContent.substring(indexOfSecondNum, screenContent.length());
                                     double secondNum = Double.parseDouble(secondNumSt);
-                                    secondNum %= numBeforeOpp;
+                                    secondNum = numBeforeOpp% secondNum;
                                     screen.setText(String.valueOf(secondNum));
                                 }
                             }
@@ -278,5 +284,44 @@ public class SimpleCalculator extends AppCompatActivity {
                 screen.setText("");
             }
         });
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater mF = getMenuInflater();
+        mF.inflate(R.menu.calc_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item1:
+                Toast.makeText(this, "Settings Selected", Toast.LENGTH_SHORT).show();
+                openSet();
+                return true;
+
+            case R.id.item2:
+                Toast.makeText(this, "NOT AVAILABLE", Toast.LENGTH_SHORT).show();
+                return true;
+
+            case R.id.item3:
+                Toast.makeText(this, "Help Selected", Toast.LENGTH_SHORT).show();
+                openHelp();
+                return true;
+            case R.id.item4:
+                Toast.makeText(this, "App closed, Goodbye!!", Toast.LENGTH_LONG).show();
+                finish();
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+    }
+    public void openSet(){
+        Intent intent = new Intent(this, Settings.class);
+        startActivity(intent);
+    }
+    public void openHelp(){
+        Intent intent = new Intent(this, Help.class);
+        startActivity(intent);
     }
 }
